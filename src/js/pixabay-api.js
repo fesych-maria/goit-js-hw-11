@@ -5,6 +5,8 @@ import axios from 'axios';
 axios.defaults.baseURL = 'https://pixabay.com';
 
 import { refs } from '../main.js';
+import { imagesTemplate } from './render-functions.js';
+
 export function onSubmit(e) {
   e.preventDefault();
   const inputValue = refs.searchInput.value.trim();
@@ -24,8 +26,8 @@ export function onSubmit(e) {
     })
     .then(response => {
       const result = response.data.hits;
-      console.log(result);
       showError(result);
+      imagesTemplate(result);
     })
     .catch(error => {
       console.log(error);
