@@ -25,7 +25,7 @@ function imgTemplate(img) {
 }
 
 export function imagesTemplate(images) {
-  //   refs.gallery.innerHTML = `<p>Loading images, please wait...</p>`;
+  refs.gallery.innerHTML = `<p>Loading images, please wait...</p>`;
   const markup = images.map(imgTemplate).join('');
   refs.gallery.innerHTML = markup;
   return markup;

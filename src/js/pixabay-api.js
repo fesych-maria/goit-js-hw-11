@@ -27,16 +27,17 @@ export function onSubmit(e) {
     .then(response => {
       const result = response.data.hits;
       if (result.length === 0) {
-        iziToast.error({
-          title: 'Error',
-          message:
-            'Sorry, there are no images matching your search query. Please try again!',
-          position: 'topRight',
-        });
+        throw new Error();
       }
       imagesTemplate(result);
     })
     .catch(e => {
-      console.log(e);
+      refs.gallery.innerHTML = '';
+      iziToast.error({
+        title: 'Error',
+        message:
+          'Sorry, there are no images matching your search query. Please try again!',
+        position: 'topRight',
+      });
     });
 }
