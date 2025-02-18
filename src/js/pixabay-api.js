@@ -13,6 +13,7 @@ export function onSubmit(e) {
   if (!inputValue) {
     return;
   }
+  refs.gallery.innerHTML = '<span class="loader"></span>';
   refs.form.reset();
   axios
     .get('/api/', {
