@@ -35,10 +35,14 @@ export function onSubmit(e) {
     .catch(e => {
       refs.gallery.innerHTML = '';
       iziToast.error({
-        title: 'Error',
+        position: 'topRight',
         message:
           'Sorry, there are no images matching your search query. Please try again!',
-        position: 'topRight',
+        messageColor: '#fafafb',
+        messageSize: '16px',
+        backgroundColor: '#ef4040',
+        maxWidth: '432px',
+        iconUrl: '../img/icon.svg',
       });
     });
 }

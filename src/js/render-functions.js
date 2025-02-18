@@ -40,15 +40,3 @@ export function imagesTemplate(images) {
   gallery.refresh();
   return markup;
 }
-
-// gallery.on('shown.simplelightbox', function () {
-//   const wrapper = document.querySelector('.sl-wrapper');
-//   wrapper.style.backgroundColor = 'rgba(46, 47, 66, 0.8)';
-//   const whiteElements = [
-//     wrapper.querySelector('.sl-close'),
-//     wrapper.querySelector('.sl-counter'),
-//     wrapper.querySelector('.sl-prev'),
-//     wrapper.querySelector('.sl-next'),
-//   ];
-//   whiteElements.forEach(el => (el.style.color = '#ffffff'));
-// });
