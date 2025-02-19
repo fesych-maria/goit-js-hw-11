@@ -6,6 +6,7 @@ axios.defaults.baseURL = 'https://pixabay.com';
 
 import { refs } from '../main.js';
 import { imagesTemplate } from './render-functions.js';
+import iconPath from '../img/icon.svg';
 
 export function onSubmit(e) {
   e.preventDefault();
@@ -42,7 +43,7 @@ export function onSubmit(e) {
         messageSize: '16px',
         backgroundColor: '#ef4040',
         maxWidth: '432px',
-        iconUrl: '../img/icon.svg',
+        iconUrl: iconPath,
       });
     });
 }
