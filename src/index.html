@@ -11,27 +11,30 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="path/to/icomoon/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <main>
-      <div class="form-wrapper">
-        <form class="search-form js-search-form">
-          <input
-            type="text"
-            name="img-search"
-            class="search-field js-search-field"
-            placeholder="Search images..."
-          />
-          <button type="submit" class="search-btn js-search-btn">Search</button>
-        </form>
+      <div class="container">
+        <div class="form-wrapper">
+          <form class="search-form js-search-form">
+            <input
+              type="text"
+              name="img-search"
+              class="search-field js-search-field"
+              placeholder="Search images..."
+            />
+            <button type="submit" class="search-btn js-search-btn">
+              Search
+            </button>
+          </form>
+        </div>
+        <ul class="gallery"></ul>
       </div>
-      <ul class="gallery"></ul>
     </main>
 
     <script type="module" src="./main.js" type="module"></script>
